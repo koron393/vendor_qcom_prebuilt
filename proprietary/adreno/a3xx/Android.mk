@@ -14,8 +14,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter rhine shinano, $(BOARD_VENDOR_PLATFORM)), )
-
+ifneq ($(filter yukon rhine shinano shinano2, $(PRODUCT_PLATFORM)), )
 include $(CLEAR_VARS)
 LOCAL_MODULE := eglsubAndroid
 LOCAL_MODULE_OWNER := Sony Mobile
